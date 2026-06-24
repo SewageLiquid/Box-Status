@@ -2,4 +2,4 @@
 # Box-Status
 # Box-Status
 
-[Click Here](http://127.0.0.1:5500/index.html)
+[Click Here](https://sewageliquid.github.io/Box-Status/)
