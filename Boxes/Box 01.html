@@ -50,4 +50,25 @@
     <section class="features">
         <img src="../images/1.1.jpeg" alt="Box 01"> 
     </section>
+        <select id="location" name="Location">
+        <option value="">Select a location</option>
+        <option value="Living Room">Living Room</option>
+        <option value="Bedroom">Bedroom</option>
+        <option value="Kitchen">Kitchen</option>
+    </select>
+    <script>
+const locationSelect = document.getElementById("location");
+
+// Load previously selected value
+const savedLocation = localStorage.getItem("location");
+if (savedLocation) {
+    locationSelect.value = savedLocation;
+}
+
+// Save whenever the selection changes
+locationSelect.addEventListener("change", function () {
+    localStorage.setItem("location", this.value);
+});
+</script>
+    </body>
 </html>
