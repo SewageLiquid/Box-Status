@@ -66,19 +66,5 @@
         <p><a href="Boxes/Box 23.html">Box 23</a>: <button><strong>Unpacked</strong></button></p>
         <p><a href="Boxes/Box 24.html">Box 24</a>: <button><strong>Unpacked</strong></button></p>
         <p><a href="Boxes/Box 25.html">Box 25</a>: <button><strong>Unpacked</strong></button></p>
-      <script>
-const locationSelect = document.getElementById("location");
-
-// Load previously selected value
-const savedLocation = localStorage.getItem("location");
-if (savedLocation) {
-    locationSelect.value = savedLocation;
-}
-
-// Save whenever the selection changes
-locationSelect.addEventListener("change", function () {
-    localStorage.setItem("location", this.value);
-});
-</script>
 </body>
 </html>
