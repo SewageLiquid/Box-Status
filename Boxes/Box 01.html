@@ -56,19 +56,5 @@
         <option value="Bedroom">Bedroom</option>
         <option value="Kitchen">Kitchen</option>
     </select>
-    <script>
-const locationSelect = document.getElementById("location");
-
-// Load previously selected value
-const savedLocation = localStorage.getItem("location");
-if (savedLocation) {
-    locationSelect.value = savedLocation;
-}
-
-// Save whenever the selection changes
-locationSelect.addEventListener("change", function () {
-    localStorage.setItem("location", this.value);
-});
-</script>
     </body>
 </html>
